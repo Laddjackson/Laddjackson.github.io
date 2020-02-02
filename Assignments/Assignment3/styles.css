@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    margin: 10%;
+}
+
+#pgraph section {
+    background-color: rgb(136, 148, 202);
+    padding: 3px 100px 3px 10px;
+    margin: 5px;
+}
+
+h1, h2, h3, h4{
+    text-align: center;
+}
+
+#main-content h2 {
+    text-align: left;
+}
+
+#main-header, .two-cols section, #main-footer, .three-cols {
+    padding:10px;
+    margin:5px;
+}
+
+#main-header {
+     padding:10px;
+     margin:5px;
+     
+}
+
+#sidebar {
+    padding: 5px 100px 3px 10px;
+    margin: 5px;
+    background: rgb(231, 152, 49);
+}
+
+.two-cols section {
+    background: rgb(47, 76, 116);
+    padding:10px;
+    margin:5px;
+}
+
+.two-cols h2, .main-content h2 {
+    text-align: left;
+}
+
+.nested-columns-one section, .nested-columns-two section{
+    background-color: orange;
+}
+
+#main-footer {
+    background: rgb(255, 145, 0);
+    text-align: right;
+}
+
+/* Nav Bar */
+#main-nav li {
+    list-style-type: none;
+    background: grey;
+    padding:15px 15px;
+    margin: 0px 1px;
+    text-align: center;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: orange;
+}
+
+.three-pics section{
+   text-align: center;
+}
+
+/* For larger layouts */
+/* Screen 900px or larger apply these styles */
+@media(min-width:900px) {
+
+    #main-nav ul, .main-content, .two-cols, .nested-columns-one, .nested-columns-two, .three-pics {
+        display: flex;
+    }
+
+    .main-content section, .two-cols section, .nested-columns-one, .nested-columns-two, .three-pics section, #main-nav ul li {
+        flex:1;
+    }
+
+}
