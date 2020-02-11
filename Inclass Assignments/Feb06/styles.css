@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: lavender;
+}
+
+#content {
+    margin: 0;
+}
+
+
+#boxes section{
+    padding: 3px 100px 3px 100px;
+    margin: 25px;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+    background: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+.examples label {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.examples input {
+    width: 100%;
+    display: block;
+    padding: 5px;
+}
+
+.examples input:focus {
+    background: skyblue;
+}
+
+.examples button {
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+
+@media(min-width:900px) {
+
+    #boxes, .examples p{
+        display: flex;
+    }
+
+    #boxes section {
+        flex:1;
+    }
+
+    .examples label {
+        width: 100px;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .examples input {
+        width: 200px;
+        display: block;
+    }
+
+}

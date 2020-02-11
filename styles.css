@@ -3,21 +3,66 @@ body {
 }
 
 div {
-    background-color: #E6E1C9;
-    color: #524C49;
-    padding:20px;
-    width:75%; /* % measurements are more versitile*/
-    margin:auto; /*center horizontally*/
+    background-color: #584242;
+    color: #BDBCAA;
+    padding: 40px;
+    width: 85%; /* % measurements are more versitile*/
+    margin: auto; /*center horizontally*/
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 20px;
-    box-shadow: 5px 6px black;
+    border-radius: 5px;
 }
 
-h2 {
-    color: #524C49;
+h1, h2 {
+    color: #BDBCAA;
+    text-align: center;
 }
 
-#links a{
+.assignments section {
+    background: #8F4747;
+    color: #BDBCAA;
+    padding: 10px;
+    margin: 5px;
+
+}
+
+.in-class-exercises section {
+    background: #53585C;
+    padding: 10px 0px;
+    margin: 5px;
+}
+
+.assignment_imgs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+a {
     text-decoration: none;
-    color: #C24933;
+    color: #90A4E9;
+}
+
+ul {
+    padding-left: 15px;
+    padding-right: 0px;
+}
+
+@media(min-width:900px) {
+
+    .assignments {
+        display: flex;
+    }
+
+    .assignments section {
+        flex:1;
+    }
+
+    .in-class-links {
+        display: flex;
+    }
+    .in-class-links ul {
+        flex: 1;
+        justify-content: space-between;
+    }
 }

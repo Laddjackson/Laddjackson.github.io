@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    background-color: #584242;
+    color: #BDBCAA;
+    padding: 40px;
+    width: 25%; /* % measurements are more versitile*/
+    margin: auto; /*center horizontally*/
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    text-align: center;
+}
+
+button {
+    width: 50%;
+}
