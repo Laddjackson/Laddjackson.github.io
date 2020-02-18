@@ -52,6 +52,7 @@ ul {
 
     .assignments {
         display: flex;
+        flex-wrap: wrap;
     }
 
     .assignments section {

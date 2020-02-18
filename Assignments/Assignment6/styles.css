@@ -1,0 +1,161 @@
+#main-content {
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    font-family: "Berlingske Sans", "Arial", sans-serif;
+    font-size: 24px;
+}
+
+.hidden {
+    display:none;
+}
+
+header {
+    color: white;
+    background-color: black;
+
+}
+
+h1 {
+    color: #731613;
+}
+
+a {
+    color: #731613;
+    font-weight: bold;
+}
+
+.research-options section{
+    font-size: 16px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.research-options a {
+    color: #731613;
+    text-decoration: none;
+}
+
+.research-options section:hover {
+    background-color: rgb(197, 197, 197);
+}
+
+#research-img-1 {
+    width: 100%;
+    height: 600px;
+}
+
+.research-imgs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color: #731613;
+    padding: 10px;
+    margin: 0px;
+}
+
+/* Nav Bar */
+#main-nav ul {
+    list-style-type: none;
+    padding-left:0;
+}
+
+#main-nav li {
+    background:#abc;
+    padding:10px;
+    margin:2px 0;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color:white;
+    cursor:pointer;
+}
+
+/* Main Banner */
+#main-banner ul {
+    list-style-type: none;
+    background-color: #731613;
+}
+
+#main-banner li {
+    padding: 20px;
+    margin: 2px;
+}
+
+#main-banner li:hover {
+    background-color: #570E0C;
+}
+
+#main-banner a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Nav Bar Toggle */
+#nav-toggle div {
+    width: 35px;
+    height: 5px;
+    background-color:white;
+    margin:6px 0;
+}
+
+
+@media(min-width:900px) {
+
+    .research-options {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .research-options section {
+        flex:1;
+    }
+
+     /* Navigation */
+    #nav-toggle {
+        display:none;
+    }
+
+    #main-nav ul {
+        display:flex;
+    }
+
+    #main-nav li {
+        background:transparent;
+    }
+
+    #main-nav a {
+        padding: 3px;
+    }
+
+    #main-nav a:hover {
+        background-color: #731613;
+    }
+
+    #main-banner ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #main-banner li {
+        background: transparent;
+    }
+
+    #main-nav a:hover {
+        /*Insert Hover info*/
+    }
+
+    #main-nav-sec {
+        display: flex;
+    }
+
+    #main-nav-items {
+        flex:1;
+    }
+}

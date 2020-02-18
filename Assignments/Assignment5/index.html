@@ -1,30 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <header>
         <link rel="stylesheet" href="styles.css">
         <title> </title>
-    </head>
-    <div id="content">
+        <h1>If Statement Assignment</h1>
+    </header>
+    <nav id="main-nav">
+        <div id="nav-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="main-nav-items">
+            <li id="link-exercise-1"><a href="#">Exercise 1</a></li>
+            <li id="link-exercise-2"><a href="#">Exercise 2</a></li>
+        </ul>
+    </nav>
+    <div id="exercise-1">
         <body>
+            <section class="age-game">
             <h1>Learning JavaScript </h1>
-            <table>
-                <tr><td><p class="labels"><label for="txt-first-name">First Name: </label></p></td><td><p><input id="txt-first-name"></p></td></tr>
-                <tr><td><p class="labels"><label for="txt-last-name">Last Name: </label></p class="labels"></td><td><p><input id="txt-last-name"></p></td></tr>
-                <tr><td><p class="labels"><label for="product-name">Product Name: </label></p class="labels"></td><td><p><input id="product-name"></p></td></tr>
-                <tr><td><p class="labels"><label for="product-count">Product Count: </label></p class="labels"></td><td><p><input id="product-count"></p></td></tr>
-                <tr><td><p class="labels"><label for="product-price">Product Price: </label></p class="labels"></td><td><p><input id="product-price"></p></td></tr>
-                <tr><td><p class="labels">Tax: </p class="labels"></td><td><p id="tax-num"> 0.07</p></td></tr>
-            </table>
-
-            <button id="calculate">Calculate</button>
-
-            <p id="results">
+                <p  class="name-1">
+                    <label for="txt-name-1">Name 1: </label><input id="txt-name-1">
+                    <span id="error-name-1" class="error hidden">- Incorrect Value!</span>
+                </p >
+                <p class="age-1">
+                    <label for="num-age-1">Age 1: </label><input id="num-age-1">
+                    <span id="error-age-1" class="error hidden">- Incorrect Value!</span>
+                </p>
+                <p class="name-2">
+                    <label for="txt-name-2">Name 2: </label><input id="txt-name-2">
+                    <span id="error-name-2" class="error hidden">- Incorrect Value!</span>
+                </p>
+                <p class="age-2">
+                    <label for="num-age-2">Age 2: </label><input id="num-age-2">
+                    <span id="error-age-2" class="error hidden">- Incorrect Value!</span>
+                </p>
+                <p class="name-3">
+                    <label for="txt-name-3">Name 3: </label><input id="txt-name-3">
+                    <span id="error-name-3" class="error hidden">- Incorrect Value!</span>
+                </p>
+                <p class="age-3">
+                    <label for="num-age-3">Age 3: </label><input id="num-age-3">
+                    <span id="error-age-3" class="error hidden">- Incorrect Value!</span>
+                </p>
+                <button id="btn-compare-ages">Compare Ages</button>
+                <p id="results">
                 
-            </p>
-            <p id="total">
-
-            </p>
+                </p>
+            </section>
         </body>
-        <script src="script.js"></script>
     </div>
+    <div id="exercise-2">
+        <section class="donation-bar">
+            <h1>Fund Raising</h1>
+            <h2>Goal: 10,000</h2>
+            <label for="funds-raised"> Funds Raised: </label><input id="num-funds-raised"><button id="btn-display-donations">Display</button>
+            <div id="bar-graph"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </html>

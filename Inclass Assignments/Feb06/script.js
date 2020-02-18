@@ -6,9 +6,31 @@ function displayEmotion() {
     console.log("Your first name is "+firstName);
     console.log("Your favorite color is "+favColor);
     console.log("Your emotion is "+emotion);
-    let results = document.getElementById("results");
-    results.innerHTML = `${firstName} your favorite color is ${favColor} and you are ${emotion}`;
 
+    let results = document.getElementById("results");
+    results.innerHTML = `Welcome ${firstName}!<br>you are ${emotion} today`;
+    let displayEmotion = document.getElementById("emotions");
+    displayEmotion.innerHTML = `TEST`;
+    if(emotion == "sad")
+    {
+        displayEmotion.innerHTML = `:(`;
+    }
+    else if(emotion == "happy")
+    {
+        displayEmotion.innerHTML = ":)";
+    }
+    else if(emotion == `silly`)
+    {
+        displayEmotion.innerHTML = ":P";
+    }
+    else if(emotion == `angry`)
+    {
+        displayEmotion.innerHTML = `>:|`;
+    }
+    else
+    {
+        displayEmotion.innerHTML = "ERROR!";
+    }
     /*
     let price = parseFloat(document.getElementById("txt-price").value)
     parseInt(...)

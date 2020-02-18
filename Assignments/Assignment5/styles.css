@@ -2,26 +2,104 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-div {
-    background-color: gray;
-    color: rgb(243, 144, 144);
-    padding: 40px;
-    width: 25%; /* % measurements are more versitile*/
-    margin: auto; /*center horizontally*/
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 5px;
+header {
+    background-color: steelblue;
+    margin: 0px;
+    padding: 20px;
+}
+
+.error {
+    color:red;
+}
+
+.hidden {
+    display:none;
+}
+
+/* Nav Bar */
+#main-nav-items {
+    list-style-type: none;
     text-align: center;
+    background-color: transparent;
+    margin: 0px;
+    padding: 20px 50px 20px 50px;
+  }
+
+#main-nav-items li {
+    padding: 10px 15%;
+    margin: 0px;
+    display: inline;
+    border-bottom: transparent;
+ }
+
+#main-nav li:hover {
+    border-bottom: black;
+}
+
+#main-nav a {
+    text-decoration: none;
+}
+
+#main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Nav Bar Toggle */
+#nav-toggle div {
+    width: 35px;
+    height: 5px;
+    background-color:black;
+    margin:6px 0;
+}
+
+/*Exercise 1*/
+#exercise-1 {
+    background-color: salmon;
+    color: slateblue;
+}
+
+#exercise-1 .hidden {
+    background-color: green;
+    color: greenyellow;
 }
 
 h1 {
     text-align: center;
 }
 
-.labels {
-    text-align: right;
+.age-game p {
+    display: flex;
+    padding: 10px 0px;
 }
 
-#tax-num, #total, #results{
+.age-game label {
+    width:100%;
+    text-align: right;
+    flex:1;
+    padding: 10px 10px;
+}
+
+.age-game input {
+    flex:1;
+    width: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+.age-game input:focus {
+    background: rgb(73, 230, 99);
+}
+ 
+.age-game button {
+    text-align: block;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 20px 75px;
+}
+
+.results{
     text-align: left;
 }
 
@@ -30,22 +108,121 @@ h1 {
     font-weight: bold;
 }
 
-tr, td{
-    padding: 0px;
+/*Exercise 2*/
+#exercise-2 {
+    background-color: salmon;
+    color: slateblue;
+    display: none;
+    padding: 10px; /* % measurements are more versitile*/
+    margin: auto; /*center horizontally*/
+    border-radius: 5px;
+    flex:1;
 }
 
-input {
-    display: inline-block;
-    float: none;
-    text-align: left;
-    font-size: 16px;
-    padding: 8px 20px;
+#exercise-2 input {
+    margin: 20px 10px 20px 0px;
 }
 
-input:focus {
-    background: rgb(73, 230, 99);
+#exercises-2 button {
+    padding: 10px 5px;
+    border-radius: 5px;
 }
 
-button {
-    padding: 20px 75px;
+#bar-graph {
+    margin: auto;
+    height: 300px;
+    width: 50px;
+    background-color: white;
+}
+
+.g2500 {
+    background: rgb(255,0,0);
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
+}
+
+.g5000 {
+    background: rgb(255,0,0);
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+.g7500 {
+    background: rgb(255,0,0);
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
+}
+
+.g10000 {
+    background: rgb(255,0,0);
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 100%);
+}
+
+@media(min-width:900px) {
+
+    /* Exercise 1 */
+    #exercise-1 {
+        padding: 10px; /* % measurements are more versitile*/
+        margin: auto; /*center horizontally*/
+        border-radius: 5px;
+        flex:1;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    .age-game p {
+        /*justify-content: center;*/
+        display: flex;
+        padding: 10px 0px
+    }
+    
+    .age-game label {
+        width:100%;
+        text-align: right;
+        flex:1;
+        padding: 10px 10px;
+    }
+    
+    .age-game input {
+        flex:1;
+        width: 5px;
+        text-align: left;
+        font-size: 16px;
+    }
+    
+    
+    .age-game input:focus {
+        background: rgb(73, 230, 99);
+    }
+    
+    /*Nav Bar*/
+    #main-nav-items {
+        list-style-type: none;
+        text-align: center;
+        background-color: whitesmoke;
+        margin: 0px;
+        padding: 20px 50px 20px 50px;
+      }
+    
+    #main-nav-items li {
+        padding: 10px 15%;
+        margin: 0px;
+        display: inline;
+        border-bottom: transparent;
+     }
+    
+    #main-nav li:hover {
+        border-bottom: black;
+    }
+    
+    #main-nav a {
+        text-decoration: none;
+    }
+    
+    #main-nav a:hover {
+        text-decoration: underline;
+    }
+
+    #nav-toggle {
+        display:none;
+    }
 }
