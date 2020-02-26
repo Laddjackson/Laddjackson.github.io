@@ -1,0 +1,40 @@
+ul {
+    list-style-type: none;
+    margin: auto;
+    display: flex;
+}
+
+li {
+    padding: 30px;
+    margin: 20px;
+    background-color: crimson;
+    flex: 1;
+}
+
+#centered {
+    padding: 20px;
+    text-align: center;
+    background-color: coral;
+}
+
+#centered p {
+    background-color: cornflowerblue;
+    padding: 20px;
+}
+
+#bottom-boxes {
+    margin: auto;
+    padding: 10px;
+    display: flex;
+}
+
+#bottom-boxes .boxes {
+    background-color: brown;
+    margin: auto;
+    flex: 1;
+}
+
+.mini-boxes {
+    background-color: chartreuse;
+    padding: 15px;
+}
