@@ -14,22 +14,6 @@ h1, h2 {
     color: yellow;
 }
 
-/*Exercise 2*/
-#exercise-2 {
-    background-color: steelblue;
-    color: yellow;
-    padding: 10px; /* % measurements are more versitile*/
-    margin: 20px; /*center horizontally*/
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
 .container {
     position: relative;
     width: 400px;
@@ -82,10 +66,6 @@ button {
         padding: 10px; /* % measurements are more versitile*/
         margin: auto; /*center horizontally*/
         border-radius: 5px;
-        flex:1;
-    }
-
-    #exercise-2 {
         flex:1;
     }
 
