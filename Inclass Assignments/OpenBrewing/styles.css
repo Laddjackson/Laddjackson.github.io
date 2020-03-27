@@ -1,0 +1,84 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background:url(images/Hopbkg.jpg);
+}
+
+.example {
+    background-image:url(images/Woodbkg.jpg);
+    padding:10px;
+    margin:10px;
+    border-radius:5px;
+    min-height:200px;
+}
+
+.example h1 {
+    color: #CBD550;
+    text-align:center;
+    padding: 10px;
+    margin: auto;
+    width: 10%;
+}
+
+.hidden {
+    display:none;
+}
+
+.brewery {
+    background-color: rgb(255, 178, 36);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.8;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.brewery:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+h2 {
+    color: rgb(151, 16, 16);
+}
+
+a {
+    text-decoration: none;
+    color:rgb(238, 255, 0);
+}
+
+.info {
+    text-align: left;
+    color: #F4F08C;
+    background-color:#44771A;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+/* Large Resolutions Only */
+@media(min-width:900px){
+    #content {
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    .example {
+        width:80%;
+        margin:auto;
+    }
+
+    #breweries-section {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+
+    .brewery {
+        width:30%;
+        padding:10px;
+        margin:10px;
+    }
+}
