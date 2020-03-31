@@ -4,7 +4,6 @@ async function displayMovies() {
     let moviesJSON = await response.json();
     let movieDiv = document.getElementById("movies-section");
 
-    //loop through the list of movies from the JSON file
     for(i in moviesJSON){
         let movie = moviesJSON[i];
         movieDiv.append(getMovieSection(movie));
@@ -12,7 +11,6 @@ async function displayMovies() {
     
 }
 
-//Give JSON movie object
 function getMovieSection(movie) {
     let movieSection = document.createElement("section");
     movieSection.classList.add("movie");
